@@ -27,7 +27,7 @@
     if (S.breed === 'duanmao') S.breed = 'garfield';
     if (!S.lastHungerUpdate) S.lastHungerUpdate = Date.now();
 
-    const save = () => localStorage.setItem('mi_state', JSON.stringify(S));
+    const save = () => { if (!isResetting) localStorage.setItem('mi_state', JSON.stringify(S)); };
     let saveSoonTmo = null;
     function saveSoon() {
       clearTimeout(saveSoonTmo);
@@ -900,6 +900,17 @@
         else if (S.hunger < 60) label.textContent = '肚子空空的';
         else label.textContent = '饱饱的 ✨';
       }
+
+      // 根据饥饿度改变猫咪状态
+      const catMain = document.getElementById('cat-main');
+      if (catMain) {
+        catMain.classList.remove('hungry', 'starving');
+        if (S.hunger < 30) {
+          catMain.classList.add('starving');
+        } else if (S.hunger < 60) {
+          catMain.classList.add('hungry');
+        }
+      }
     }
 
     // ── MODAL ──
@@ -933,8 +944,11 @@
     }
 
     // ── DEV RESET ──
+    let isResetting = false;
     function devReset() {
       if (!confirm('重置所有数据并返回欢迎界面？')) return;
+      isResetting = true;
+      S.firstRun = true;
       localStorage.removeItem('mi_state');
       location.reload();
     }

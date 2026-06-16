@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1900" viewBox="0 0 1800 1900">
+  <defs>
+    <style>
+      .bg { fill: #fffaf1; }
+      .title { font: 800 44px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #3d2115; }
+      .subtitle { font: 600 20px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #9b7359; }
+      .section-title { font: 800 28px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #3d2115; }
+      .node-title { font: 800 22px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #3d2115; }
+      .node-text { font: 600 18px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #7b5b46; }
+      .small { font: 600 16px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #8b6a54; }
+      .pill-text { font: 800 18px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #8c4b32; }
+      .card { fill: #ffffff; stroke: #eadbc5; stroke-width: 2; }
+      .hub { fill: #fff1df; stroke: #d99b73; stroke-width: 3; }
+      .band { fill: #f6ecd9; stroke: #eadbc5; stroke-width: 2; }
+      .data { fill: #edf6ee; stroke: #96bd9c; stroke-width: 2.5; }
+      .reward { fill: #fff0ef; stroke: #d78e7e; stroke-width: 2.5; }
+      .flow { stroke: #c68b68; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .thin-flow { stroke: #d8b79d; stroke-width: 2.5; fill: none; marker-end: url(#arrow-soft); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#c68b68"/>
+    </marker>
+    <marker id="arrow-soft" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#d8b79d"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#8f6a4e" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect class="bg" width="1800" height="1900"/>
+  <circle cx="1625" cy="130" r="190" fill="#f3dfc7" opacity="0.45"/>
+  <circle cx="140" cy="1740" r="220" fill="#e8f2df" opacity="0.5"/>
+
+  <text x="900" y="82" text-anchor="middle" class="title">拾猫记 产品功能架构图</text>
+  <text x="900" y="120" text-anchor="middle" class="subtitle">五个底部入口：首页、互动、功能中心、商店、自定义</text>
+
+  <rect x="680" y="165" width="440" height="112" rx="30" class="hub" filter="url(#shadow)"/>
+  <text x="900" y="214" text-anchor="middle" class="section-title">拾猫记 App</text>
+  <text x="900" y="248" text-anchor="middle" class="node-text">虚拟猫咪陪伴 + 日常效率小工具</text>
+
+  <rect x="60" y="355" width="300" height="1030" rx="28" class="band"/>
+  <text x="210" y="402" text-anchor="middle" class="section-title">首页</text>
+  <rect x="96" y="445" width="228" height="90" rx="20" class="card"/>
+  <text x="210" y="482" text-anchor="middle" class="node-title">猫咪展示</text>
+  <text x="210" y="512" text-anchor="middle" class="small">点击产生反馈</text>
+  <rect x="96" y="570" width="228" height="90" rx="20" class="card"/>
+  <text x="210" y="607" text-anchor="middle" class="node-title">状态概览</text>
+  <text x="210" y="637" text-anchor="middle" class="small">好感度 / 金币</text>
+  <rect x="96" y="695" width="228" height="90" rx="20" class="card"/>
+  <text x="210" y="732" text-anchor="middle" class="node-title">今日任务</text>
+  <text x="210" y="762" text-anchor="middle" class="small">添加 / 完成 / 删除</text>
+  <rect x="96" y="820" width="228" height="90" rx="20" class="card"/>
+  <text x="210" y="857" text-anchor="middle" class="node-title">闹钟卡片</text>
+  <text x="210" y="887" text-anchor="middle" class="small">查看最近提醒</text>
+
+  <rect x="390" y="355" width="300" height="1030" rx="28" class="band"/>
+  <text x="540" y="402" text-anchor="middle" class="section-title">互动</text>
+  <rect x="426" y="445" width="228" height="116" rx="20" class="card"/>
+  <text x="540" y="487" text-anchor="middle" class="node-title">抚摸</text>
+  <text x="540" y="519" text-anchor="middle" class="small">好感 +2</text>
+  <text x="540" y="545" text-anchor="middle" class="small">爱心 / 粒子反馈</text>
+  <rect x="426" y="610" width="228" height="140" rx="20" class="card"/>
+  <text x="540" y="650" text-anchor="middle" class="node-title">喂食</text>
+  <text x="540" y="683" text-anchor="middle" class="small">消耗库存 1 份</text>
+  <text x="540" y="711" text-anchor="middle" class="small">增加好感</text>
+  <text x="540" y="739" text-anchor="middle" class="small">猫咪享受动画</text>
+  <rect x="426" y="800" width="228" height="140" rx="20" class="card"/>
+  <text x="540" y="840" text-anchor="middle" class="node-title">玩耍</text>
+  <text x="540" y="873" text-anchor="middle" class="small">玩具 / 徒手互动</text>
+  <text x="540" y="901" text-anchor="middle" class="small">增加好感</text>
+  <text x="540" y="929" text-anchor="middle" class="small">猫咪享受动画</text>
+
+  <rect x="720" y="355" width="360" height="1030" rx="28" class="band"/>
+  <text x="900" y="402" text-anchor="middle" class="section-title">功能中心</text>
+  <rect x="755" y="445" width="135" height="96" rx="20" class="card"/>
+  <text x="822" y="483" text-anchor="middle" class="node-title">阅读</text>
+  <text x="822" y="514" text-anchor="middle" class="small">专注计时</text>
+  <rect x="910" y="445" width="135" height="96" rx="20" class="card"/>
+  <text x="978" y="483" text-anchor="middle" class="node-title">日历</text>
+  <text x="978" y="514" text-anchor="middle" class="small">任务管理</text>
+  <rect x="755" y="585" width="135" height="96" rx="20" class="card"/>
+  <text x="822" y="623" text-anchor="middle" class="node-title">音乐</text>
+  <text x="822" y="654" text-anchor="middle" class="small">播放 / 切歌</text>
+  <rect x="910" y="585" width="135" height="96" rx="20" class="card"/>
+  <text x="978" y="623" text-anchor="middle" class="node-title">闹钟</text>
+  <text x="978" y="654" text-anchor="middle" class="small">提醒管理</text>
+  <rect x="755" y="725" width="135" height="96" rx="20" class="card"/>
+  <text x="822" y="763" text-anchor="middle" class="node-title">便签</text>
+  <text x="822" y="794" text-anchor="middle" class="small">保存奖励</text>
+  <rect x="910" y="725" width="135" height="96" rx="20" class="card"/>
+  <text x="978" y="763" text-anchor="middle" class="node-title">睡眠</text>
+  <text x="978" y="794" text-anchor="middle" class="small">待开放</text>
+
+  <rect x="1110" y="355" width="300" height="1030" rx="28" class="band"/>
+  <text x="1260" y="402" text-anchor="middle" class="section-title">商店</text>
+  <rect x="1146" y="445" width="228" height="112" rx="20" class="card"/>
+  <text x="1260" y="487" text-anchor="middle" class="node-title">食物</text>
+  <text x="1260" y="519" text-anchor="middle" class="small">鱼干 / 牛奶 / 零食</text>
+  <text x="1260" y="545" text-anchor="middle" class="small">消耗金币增加库存</text>
+  <rect x="1146" y="605" width="228" height="112" rx="20" class="card"/>
+  <text x="1260" y="647" text-anchor="middle" class="node-title">玩具</text>
+  <text x="1260" y="679" text-anchor="middle" class="small">网球 / 毛线 / 激光笔</text>
+  <text x="1260" y="705" text-anchor="middle" class="small">用于互动玩耍</text>
+  <rect x="1146" y="765" width="228" height="112" rx="20" class="card"/>
+  <text x="1260" y="807" text-anchor="middle" class="node-title">特别礼物</text>
+  <text x="1260" y="839" text-anchor="middle" class="small">蝴蝶结 / 皇冠 / 猫窝</text>
+  <text x="1260" y="865" text-anchor="middle" class="small">长期收藏库存</text>
+
+  <rect x="1440" y="355" width="300" height="1030" rx="28" class="band"/>
+  <text x="1590" y="402" text-anchor="middle" class="section-title">自定义</text>
+  <rect x="1476" y="445" width="228" height="96" rx="20" class="card"/>
+  <text x="1590" y="483" text-anchor="middle" class="node-title">猫咪名字</text>
+  <text x="1590" y="514" text-anchor="middle" class="small">输入并保存</text>
+  <rect x="1476" y="585" width="228" height="96" rx="20" class="card"/>
+  <text x="1590" y="623" text-anchor="middle" class="node-title">猫咪品种</text>
+  <text x="1590" y="654" text-anchor="middle" class="small">橘猫 / 暹罗 / 布偶</text>
+  <rect x="1476" y="725" width="228" height="96" rx="20" class="card"/>
+  <text x="1590" y="763" text-anchor="middle" class="node-title">猫咪体型</text>
+  <text x="1590" y="794" text-anchor="middle" class="small">小 / 正常 / 肥宅猫</text>
+  <rect x="1476" y="865" width="228" height="96" rx="20" class="card"/>
+  <text x="1590" y="903" text-anchor="middle" class="node-title">开发者选项</text>
+  <text x="1590" y="934" text-anchor="middle" class="small">重置本地数据</text>
+
+  <path class="flow" d="M900 277 C900 325 210 310 210 355"/>
+  <path class="flow" d="M900 277 C900 325 540 310 540 355"/>
+  <path class="flow" d="M900 277 C900 325 900 310 900 355"/>
+  <path class="flow" d="M900 277 C900 325 1260 310 1260 355"/>
+  <path class="flow" d="M900 277 C900 325 1590 310 1590 355"/>
+
+  <rect x="420" y="1490" width="960" height="150" rx="30" class="data" filter="url(#shadow)"/>
+  <text x="900" y="1545" text-anchor="middle" class="section-title">本地状态存储 localStorage</text>
+  <text x="900" y="1584" text-anchor="middle" class="node-text">金币、好感、库存、猫咪外观、任务、闹钟、便签等数据统一保存</text>
+
+  <rect x="365" y="1710" width="1070" height="92" rx="46" class="reward" filter="url(#shadow)"/>
+  <text x="900" y="1750" text-anchor="middle" class="pill-text">核心闭环：日常任务 / 便签获得金币 → 商店购买物品 → 互动消耗库存 → 好感提升与动画反馈</text>
+  <text x="900" y="1778" text-anchor="middle" class="small">五个入口共同围绕“陪伴感”和“日常养成”运转</text>
+
+  <path class="thin-flow" d="M210 910 C230 1210 560 1400 760 1490"/>
+  <path class="thin-flow" d="M540 940 C565 1215 720 1395 835 1490"/>
+  <path class="thin-flow" d="M900 821 C900 1195 900 1390 900 1490"/>
+  <path class="thin-flow" d="M1260 877 C1240 1215 1080 1395 965 1490"/>
+  <path class="thin-flow" d="M1590 961 C1550 1220 1220 1400 1040 1490"/>
+  <path class="flow" d="M900 1640 C900 1675 900 1690 900 1710"/>
+  <path class="thin-flow" d="M365 1756 C170 1725 150 1220 210 910"/>
+  <path class="thin-flow" d="M1435 1756 C1620 1725 1645 1240 1590 961"/>
+</svg>

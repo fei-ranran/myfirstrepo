@@ -1476,35 +1476,6 @@
       background: rgba(200, 113, 74, 0.06)
     }
 
-    /* voice btns */
-    .voice-row {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap
-    }
-
-    .vc-btn {
-      flex: 1;
-      min-width: 70px;
-      padding: 8px;
-      border: 1.5px solid var(--cream3);
-      border-radius: var(--r);
-      background: none;
-      font-family: 'Nunito', sans-serif;
-      font-weight: 700;
-      font-size: 11px;
-      cursor: pointer;
-      transition: transform var(--motion-fast) var(--ease-out), opacity var(--motion-fast) var(--ease-out), background-color var(--motion-fast) ease, border-color var(--motion-fast) ease, color var(--motion-fast) ease, box-shadow var(--motion-fast) var(--ease-out);
-      color: var(--brown3);
-      text-align: center;
-    }
-
-    .vc-btn.on {
-      border-color: var(--orange);
-      color: var(--orange);
-      background: rgba(200, 113, 74, 0.06)
-    }
-
     .debug-only {
       display: none;
     }

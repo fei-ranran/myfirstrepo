@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=3508, initial-scale=1">
+  <title>拾猫记宣传海报</title>
+  <style>
+    @font-face {
+      font-family: "ZCOOL Local";
+      src: url("../app/assets/fonts/ZCOOL-KuaiLe-Regular.woff2") format("woff2");
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "Nunito Local";
+      src: url("../app/assets/fonts/Nunito-900.woff2") format("woff2");
+      font-weight: 900;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 3508px;
+      height: 4961px;
+      margin: 0;
+      overflow: hidden;
+      background: #f8f0e4;
+      color: #432616;
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+    }
+
+    .poster {
+      position: relative;
+      width: 3508px;
+      height: 4961px;
+      padding: 210px 235px 190px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 14% 10%, rgba(255, 216, 151, 0.62), transparent 22%),
+        radial-gradient(circle at 88% 8%, rgba(142, 192, 199, 0.42), transparent 19%),
+        radial-gradient(circle at 78% 87%, rgba(255, 188, 136, 0.45), transparent 24%),
+        linear-gradient(145deg, #fff8ee 0%, #f6eadc 42%, #fffaf1 100%);
+    }
+
+    .poster::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.38;
+      background-image:
+        linear-gradient(rgba(117, 80, 55, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(117, 80, 55, 0.055) 1px, transparent 1px);
+      background-size: 80px 80px;
+      mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 78%);
+    }
+
+    .sticker {
+      position: absolute;
+      border: 5px solid rgba(86, 54, 32, 0.13);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.55);
+      box-shadow: 0 18px 40px rgba(86, 54, 32, 0.09);
+    }
+
+    .sticker.one {
+      display: none;
+    }
+
+    .sticker.two {
+      left: -115px;
+      top: 1455px;
+      width: 390px;
+      height: 150px;
+      transform: rotate(-16deg);
+    }
+
+    .sticker.three {
+      right: -140px;
+      bottom: 1040px;
+      width: 510px;
+      height: 168px;
+      transform: rotate(18deg);
+    }
+
+    .competition-logo {
+      position: absolute;
+      top: 78px;
+      right: 72px;
+      z-index: 5;
+      width: 164px;
+      height: 164px;
+      border: 16px solid rgba(255, 255, 255, 0.92);
+      border-radius: 34px;
+      background: #e60012;
+      box-shadow: 0 24px 52px rgba(86, 54, 32, 0.18);
+      object-fit: cover;
+    }
+
+    .header {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 780px;
+      gap: 90px;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 22px;
+      width: max-content;
+      margin-bottom: 46px;
+      padding: 24px 42px;
+      border: 4px solid rgba(126, 79, 48, 0.18);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.68);
+      color: #9b6747;
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .title {
+      margin: 0;
+      font-family: "ZCOOL Local", "Microsoft YaHei", sans-serif;
+      font-size: 330px;
+      line-height: 0.92;
+      font-weight: 400;
+      color: #321707;
+      text-shadow: 0 12px 0 rgba(255, 221, 164, 0.88);
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: flex-end;
+      gap: 54px;
+    }
+
+    .app-logo {
+      width: 274px;
+      height: 274px;
+      flex: 0 0 auto;
+      margin-bottom: 18px;
+      border: 12px solid rgba(255, 255, 255, 0.92);
+      border-radius: 68px;
+      background: #fff7dc;
+      box-shadow: 0 26px 58px rgba(86, 54, 32, 0.18);
+      object-fit: cover;
+      transform: rotate(-4deg);
+    }
+
+    .tagline {
+      margin: 44px 0 0;
+      color: #d67b49;
+      font-size: 82px;
+      line-height: 1.18;
+      font-weight: 900;
+    }
+
+    .lead {
+      width: 1510px;
+      margin: 36px 0 0;
+      color: #7b5a44;
+      font-size: 48px;
+      line-height: 1.58;
+      font-weight: 700;
+    }
+
+    .cat-card {
+      align-self: start;
+      justify-self: end;
+      position: relative;
+      width: 740px;
+      height: 620px;
+      margin-top: 92px;
+      border: 6px solid rgba(126, 79, 48, 0.13);
+      border-radius: 72px;
+      background:
+        radial-gradient(circle at 32% 25%, rgba(255, 231, 177, 0.94), transparent 42%),
+        linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(250, 229, 205, 0.78));
+      box-shadow: 0 38px 90px rgba(87, 57, 35, 0.18);
+      transform: rotate(3deg);
+      overflow: hidden;
+    }
+
+    .cat-card img {
+      position: absolute;
+      left: 105px;
+      bottom: 12px;
+      width: 470px;
+      filter: drop-shadow(0 24px 28px rgba(84, 50, 26, 0.17));
+    }
+
+    .cat-card .caption {
+      position: absolute;
+      left: 58px;
+      top: 44px;
+      z-index: 2;
+      padding: 20px 30px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.82);
+      color: #9b6747;
+      font-size: 38px;
+      font-weight: 900;
+    }
+
+    .main {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1180px 1fr;
+      gap: 110px;
+      margin-top: 105px;
+    }
+
+    .phone {
+      position: relative;
+      border-radius: 118px;
+      background: #25150e;
+      box-shadow:
+        0 56px 130px rgba(73, 42, 22, 0.28),
+        inset 0 0 0 14px rgba(255, 255, 255, 0.16);
+      overflow: hidden;
+    }
+
+    .phone::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 38px;
+      width: 260px;
+      height: 32px;
+      border-radius: 999px;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.45);
+      z-index: 3;
+    }
+
+    .phone img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 26px solid #25150e;
+      border-radius: inherit;
+    }
+
+    .phone.hero {
+      width: 1140px;
+      height: 2466px;
+      transform: rotate(-2.2deg);
+    }
+
+    .hero-showcase {
+      width: 1140px;
+    }
+
+    .hero-label {
+      width: max-content;
+      max-width: 1010px;
+      margin: 34px auto 0;
+      padding: 26px 40px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.82);
+      color: #7a4b30;
+      font-size: 42px;
+      font-weight: 900;
+      box-shadow: 0 12px 30px rgba(63, 34, 18, 0.14);
+      transform: rotate(-2.2deg);
+    }
+
+    .right-stack {
+      display: grid;
+      grid-template-rows: auto auto;
+      gap: 38px;
+      padding-top: 40px;
+    }
+
+    .logic-card {
+      padding: 38px 48px 42px;
+      border: 6px solid rgba(126, 79, 48, 0.12);
+      border-radius: 62px;
+      background: rgba(255, 255, 255, 0.76);
+      box-shadow: 0 34px 78px rgba(87, 57, 35, 0.12);
+    }
+
+    .section-kicker {
+      margin: 0 0 10px;
+      color: #d67b49;
+      font-size: 32px;
+      font-weight: 900;
+    }
+
+    .section-title {
+      margin: 0;
+      font-family: "ZCOOL Local", "Microsoft YaHei", sans-serif;
+      color: #331708;
+      font-size: 68px;
+      line-height: 1.08;
+      font-weight: 400;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .flow-step {
+      min-height: 132px;
+      padding: 24px 20px;
+      border-radius: 34px;
+      background: #fff7e8;
+      box-shadow: inset 0 0 0 4px rgba(139, 91, 56, 0.08);
+    }
+
+    .flow-icon {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 20px;
+      margin-bottom: 14px;
+      background: #ffdf92;
+      color: #6d4128;
+      font-size: 34px;
+    }
+
+    .flow-name {
+      color: #432616;
+      font-size: 31px;
+      line-height: 1.22;
+      font-weight: 900;
+    }
+
+    .flow-desc {
+      margin-top: 8px;
+      color: #8b6a55;
+      font-size: 22px;
+      line-height: 1.38;
+      font-weight: 700;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 24px;
+      row-gap: 38px;
+      align-items: start;
+      width: 1540px;
+      justify-self: center;
+      margin: 0 auto;
+    }
+
+    .mini-item {
+      position: relative;
+      grid-column: span 2;
+    }
+
+    .mini-item:nth-child(4) {
+      grid-column: 2 / span 2;
+    }
+
+    .mini-item:nth-child(5) {
+      grid-column: 4 / span 2;
+    }
+
+    .mini-phone {
+      width: 100%;
+      aspect-ratio: 390 / 844;
+      padding: 12px;
+      border-radius: 70px;
+      background: #25150e;
+      box-shadow: 0 32px 74px rgba(73, 42, 22, 0.22);
+      overflow: hidden;
+    }
+
+    .mini-phone img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border: 0;
+      border-radius: 58px;
+    }
+
+    .mini-tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 74px;
+      margin-top: 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.76);
+      color: #87573b;
+      font-size: 31px;
+      line-height: 1.15;
+      font-weight: 900;
+      box-shadow: 0 16px 32px rgba(86, 54, 32, 0.08);
+    }
+
+    .mini-caption {
+      display: none;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 28px;
+      width: calc(100% + 48px);
+      margin: 42px 0 0 -24px;
+      padding: 34px 44px;
+      border: 5px solid rgba(126, 79, 48, 0.1);
+      border-radius: 46px;
+      background: rgba(255, 255, 255, 0.66);
+      box-shadow: 0 22px 48px rgba(87, 57, 35, 0.09);
+    }
+
+    .mini-caption-icon {
+      width: 104px;
+      height: 104px;
+      display: grid;
+      place-items: center;
+      border-radius: 34px;
+      background: #ffe6ad;
+      font-size: 54px;
+    }
+
+    .mini-caption-title {
+      color: #321707;
+      font-size: 42px;
+      line-height: 1.18;
+      font-weight: 900;
+    }
+
+    .mini-caption-copy {
+      margin-top: 10px;
+      color: #80614d;
+      font-size: 30px;
+      line-height: 1.36;
+      font-weight: 700;
+    }
+
+    .features {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 44px;
+      margin-top: 80px;
+    }
+
+    .feature-card {
+      min-height: 360px;
+      padding: 38px 38px 36px;
+      border: 5px solid rgba(126, 79, 48, 0.1);
+      border-radius: 58px;
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 28px 60px rgba(87, 57, 35, 0.1);
+    }
+
+    .feature-no {
+      width: 80px;
+      height: 80px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 24px;
+      border-radius: 30px;
+      background: #8ec0c7;
+      color: #fff;
+      font-family: "Nunito Local", sans-serif;
+      font-size: 38px;
+      font-weight: 900;
+    }
+
+    .feature-card:nth-child(2) .feature-no {
+      background: #d67b49;
+    }
+
+    .feature-card:nth-child(3) .feature-no {
+      background: #a4c98c;
+    }
+
+    .feature-card:nth-child(4) .feature-no {
+      background: #a88fc4;
+    }
+
+    .feature-title {
+      color: #321707;
+      font-size: 43px;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+
+    .feature-copy {
+      margin-top: 18px;
+      color: #80614d;
+      font-size: 29px;
+      line-height: 1.42;
+      font-weight: 700;
+    }
+
+    .footer {
+      position: absolute;
+      left: 235px;
+      right: 235px;
+      bottom: 170px;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 70px;
+      align-items: end;
+      padding: 58px 66px;
+      border-radius: 66px;
+      background: #432616;
+      color: #fff8ed;
+      box-shadow: 0 38px 88px rgba(67, 38, 22, 0.22);
+    }
+
+    .footer-title {
+      margin: 0 0 18px;
+      color: #ffda91;
+      font-size: 44px;
+      font-weight: 900;
+    }
+
+    .footer-copy {
+      margin: 0;
+      max-width: 2200px;
+      font-size: 40px;
+      line-height: 1.46;
+      font-weight: 700;
+    }
+
+  </style>
+</head>
+<body>
+  <main class="poster">
+    <div class="sticker one"></div>
+    <div class="sticker two"></div>
+    <div class="sticker three"></div>
+    <img class="competition-logo" src="assets/competition-logo.png" alt="比赛标志">
+
+    <section class="header">
+      <div>
+        <div class="eyebrow">治愈陪伴 × 时间管理</div>
+        <div class="brand-lockup">
+          <h1 class="title">拾猫记</h1>
+          <img class="app-logo" src="assets/app-icon-crop.png" alt="拾猫记 App 图标">
+        </div>
+        <p class="tagline">有猫在，日常就不一样</p>
+        <p class="lead">把阅读、日程、笔记、闹钟这些普通任务，转化为“照顾猫咪”的温柔循环。用户完成日常行动获得代币，再兑换食物和玩具，与猫咪互动并提升好感。</p>
+      </div>
+      <aside class="cat-card">
+        <div class="caption">从门口相遇，到成为家人</div>
+        <img src="../app/assets/images/orange1.webp" alt="拾猫记小橘猫">
+      </aside>
+    </section>
+
+    <section class="main">
+      <div class="hero-showcase">
+        <div class="phone hero">
+          <img src="screenshots/01-home.png" alt="拾猫记首页界面">
+        </div>
+        <div class="hero-label">首页：陪伴状态 / 今日待办 / 猫咪反馈</div>
+      </div>
+
+      <div class="right-stack">
+        <section class="logic-card">
+          <p class="section-kicker">CORE EXPERIENCE</p>
+          <h2 class="section-title">清晰的互动闭环</h2>
+          <div class="flow">
+            <div class="flow-step">
+              <div class="flow-icon">📖</div>
+              <div class="flow-name">完成日常</div>
+              <div class="flow-desc">阅读计时、行程、笔记、闹钟</div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-icon">🪙</div>
+              <div class="flow-name">获得代币</div>
+              <div class="flow-desc">把坚持变成可见奖励</div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-icon">🛍</div>
+              <div class="flow-name">兑换道具</div>
+              <div class="flow-desc">食物、玩具、特别礼物</div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-icon">♥</div>
+              <div class="flow-name">情感反馈</div>
+              <div class="flow-desc">好感成长与状态变化</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mini-grid">
+          <div class="mini-item">
+            <div class="mini-phone"><img src="screenshots/00-onboarding-full.jpg" alt="欢迎故事界面"></div>
+            <div class="mini-tag">故事引入</div>
+          </div>
+          <div class="mini-item">
+            <div class="mini-phone"><img src="screenshots/03-feature.png" alt="功能中心界面"></div>
+            <div class="mini-tag">功能中心</div>
+          </div>
+          <div class="mini-item">
+            <div class="mini-phone"><img src="screenshots/02-interact.png" alt="猫咪互动界面"></div>
+            <div class="mini-tag">抚摸/喂食/玩耍</div>
+          </div>
+          <div class="mini-item">
+            <div class="mini-phone"><img src="screenshots/04-shop.png" alt="商店界面"></div>
+            <div class="mini-tag">商店兑换</div>
+          </div>
+          <div class="mini-item">
+            <div class="mini-phone"><img src="screenshots/05-custom.png" alt="自定义界面"></div>
+            <div class="mini-tag">自定义猫咪</div>
+          </div>
+        </section>
+
+        <div class="mini-caption">
+          <div class="mini-caption-icon">🐾</div>
+          <div>
+            <div class="mini-caption-title">把待办变成陪伴</div>
+            <div class="mini-caption-copy">从故事引入到功能奖励、商店兑换和猫咪自定义，串起完整的养成体验。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <article class="feature-card">
+        <div class="feature-no">01</div>
+        <div class="feature-title">让效率工具有情绪价值</div>
+        <div class="feature-copy">计划完成不只是一枚勾选，而是猫咪状态、代币和好感的即时反馈。</div>
+      </article>
+      <article class="feature-card">
+        <div class="feature-no">02</div>
+        <div class="feature-title">围绕真实场景组织功能</div>
+        <div class="feature-copy">阅读、行程、轻音乐、闹钟与笔记对应学习、生活和放松时刻。</div>
+      </article>
+      <article class="feature-card">
+        <div class="feature-no">03</div>
+        <div class="feature-title">操作轻量，反馈清楚</div>
+        <div class="feature-copy">底部导航、卡片入口、弹层操作与点击动效，形成顺滑的移动端流程。</div>
+      </article>
+      <article class="feature-card">
+        <div class="feature-no">04</div>
+        <div class="feature-title">从遇见到陪伴</div>
+        <div class="feature-copy">开场、任务、奖励、兑换和互动一步步推进，形成一段完整的猫咪养成体验。</div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <p class="footer-title">作品定位</p>
+        <p class="footer-copy">面向有时间管理需求、但容易缺少动力的用户：用一只需要陪伴的猫，把日常任务变成可持续的互动关系。</p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

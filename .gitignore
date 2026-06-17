@@ -32,3 +32,9 @@ npm-debug.log*
 .env
 .env.local
 .env.*.local
+
+# Electron 构建输出
+release/
+
+# 本地归档/快照备份
+archive/

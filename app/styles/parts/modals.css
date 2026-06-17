@@ -600,6 +600,21 @@
       gap: 8px
     }
 
+    #m-calendar .mbody {
+      padding-bottom: 72px;
+    }
+
+    #m-calendar .task-add-row {
+      position: sticky;
+      bottom: 0;
+      z-index: 4;
+      margin: 10px -2px 0;
+      padding: 10px 2px 12px;
+      background: linear-gradient(180deg, rgba(251, 245, 236, 0.84), var(--cream) 42%);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
     .task-inp {
       flex: 1;
       min-width: 0;
